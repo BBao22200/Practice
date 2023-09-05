@@ -7,7 +7,7 @@ export class AppService {
   }
 
   getName(): string {
-    return 'My name is James'
+    return 'My name is Jamesss'
   }
 
   getAge(): number {
