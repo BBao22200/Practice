@@ -1,27 +1,15 @@
 module.exports = {
-  ignorePatterns: ['.eslintrc.js'],
-  parser: '@typescript-eslint/parser',
-  parserOptions: {
-    project: 'tsconfig.json',
-    sourceType: 'module',
-  },
-  plugins: ['@typescript-eslint/eslint-plugin'],
-  extends: [
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended',
-    'prettier',
-    'prettier/@typescript-eslint',
-  ],
   root: true,
-  env: {
-    node: true,
-    jest: true,
-  },
+  extends: ['@react-native-community', 'plugin:@typescript-eslint/recommended'],
   rules: {
-    '@typescript-eslint/interface-name-prefix': 'off',
-    '@typescript-eslint/explicit-function-return-type': 'off',
-    '@typescript-eslint/explicit-module-boundary-types': 'off',
-    '@typescript-eslint/no-explicit-any': 'off',
-    semi: ["error", "never"]
+    'prettier/prettier': 0,
+    'multiline-ternary': ['error', 'always-multiline'],
+    'object-curly-spacing': ['error', 'always'],
+    'quotes': ['error', 'single'],
+    'semi': ['error', 'never'],
+    'no-dupe-keys': 'error',
+    'no-duplicate-case': 'error',
+    'no-empty': 'error',
+    'no-empty-character-class': 'error',
   },
 };
